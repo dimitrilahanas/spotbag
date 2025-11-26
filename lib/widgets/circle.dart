@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class MapCircle extends StatelessWidget {
+class Circle extends StatelessWidget {
   final double height;
   final double width;
   final Color color;
 
-  const MapCircle(this.height, this.width, this.color, {super.key});
+  const Circle(this.height, this.width, this.color, {super.key});
 
   @override
   Widget build(BuildContext context) {
