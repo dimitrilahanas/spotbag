@@ -3,9 +3,10 @@ import 'package:flutter/material.dart';
 class Circle extends StatelessWidget {
   final double height;
   final double width;
-  final Color color;
+  final Color? color;
+  final Widget? child;
 
-  const Circle(this.height, this.width, this.color, {super.key});
+  const Circle(this.height, this.width, this.color, this.child, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,6 +24,7 @@ class Circle extends StatelessWidget {
           ),
         ],
       ),
+      child: child,
     );
   }
 }
